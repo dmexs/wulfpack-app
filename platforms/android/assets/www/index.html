@@ -7,13 +7,23 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Wulfpack</title>
+
+        <!-- JS includes -->
+        <script type="text/javascript" charset="utf-8" src="js/PushNotification.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.2.min.js"></script>
+
+        <!-- CSS includes -->
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
     </head>
     <body>
         <div class="app">
             <h1>Welcome to the Wulfpack</h1>
             <div id="deviceready" class="blink">
-                <p class="event listening">Waiting for Howls</p>
+                <p class="event listening">Initializing</p>
+                <p class="event received">Read and Waiting</p>
             </div>
+            <ul id="app-status-ul"></ul>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
