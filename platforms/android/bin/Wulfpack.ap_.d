@@ -1,0 +1,25 @@
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/Wulfpack.ap_ \
+ : /Users/cna21/Development/wulfpack-app/platforms/android/res/drawable/icon.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/res/drawable-hdpi/icon.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/res/drawable-ldpi/icon.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/res/drawable-mdpi/icon.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/res/drawable-xhdpi/icon.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/res/values/strings.xml \
+/Users/cna21/Development/wulfpack-app/platforms/android/res/xml/config.xml \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/res/drawable/icon.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/res/drawable-hdpi/icon.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/res/drawable-ldpi/icon.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/res/drawable-mdpi/icon.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/res/drawable-xhdpi/icon.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/config.xml \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/cordova.js \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/cordova_plugins.js \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/css \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/index.html \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/css/index.css \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/logo.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js/index.js \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/AndroidManifest.xml \
