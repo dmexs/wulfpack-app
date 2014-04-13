@@ -21,16 +21,24 @@ package co.wulfpack.pushapp;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
+import java.util.*;
 
 public class Wulfpack extends CordovaActivity 
 {
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
+        // disable caching
+
         super.onCreate(savedInstanceState);
         super.init();
         // Set by <content src="index.html" /> in config.xml
-        super.loadUrl(Config.getStartUrl());
+
+        StringBuilder urlBuilder = new StringBuilder(Config.getStartUrl());
+        urlBuilder.append("?timestamp=1");
+        urlBuilder.append(new Date().getTime());
+
+        super.loadUrl(urlBuilder.toString());
         //super.loadUrl("file:///android_asset/www/index.html")
     }
 }

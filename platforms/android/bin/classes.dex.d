@@ -31,6 +31,12 @@
 /Users/cna21/Development/wulfpack-app/platforms/android/bin/classes/org/apache/cordova/dialogs/Notification$5$1.class \
 /Users/cna21/Development/wulfpack-app/platforms/android/bin/classes/org/apache/cordova/dialogs/Notification$5.class \
 /Users/cna21/Development/wulfpack-app/platforms/android/bin/classes/org/apache/cordova/dialogs/Notification.class \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/classes/org/apache/cordova/media/AudioHandler.class \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/classes/org/apache/cordova/media/AudioPlayer$1.class \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/classes/org/apache/cordova/media/AudioPlayer$MODE.class \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/classes/org/apache/cordova/media/AudioPlayer$STATE.class \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/classes/org/apache/cordova/media/AudioPlayer.class \
+/Users/cna21/Development/wulfpack-app/platforms/android/bin/classes/org/apache/cordova/media/FileHelper.class \
 /Users/cna21/Development/wulfpack-app/platforms/android/bin/classes/org/apache/cordova/vibration/Vibration.class \
 /Users/cna21/Development/wulfpack-app/platforms/android/bin/dexedLibs/classes-a391f2bbbcd3c7fc36b47b1bf422c2b1.jar \
 /Users/cna21/Development/wulfpack-app/platforms/android/bin/dexedLibs/gcm-2854bd8367b347e20538a4e2532890d8.jar \

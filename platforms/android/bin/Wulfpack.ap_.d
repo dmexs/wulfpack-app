@@ -16,15 +16,17 @@
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/config.xml \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/cordova.js \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/cordova_plugins.js \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/courtView.html \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/css \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/den.html \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/help.html \
-/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/howls.html \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/howl.html \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/index.html \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/legal.html \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/sounds \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/territories.html \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/css/images \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/css/images.old \
@@ -341,6 +343,7 @@
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/css/images.old/icons-svg/user-white.svg \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/css/images.old/icons-svg/video-black.svg \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/css/images.old/icons-svg/video-white.svg \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/bg.gif \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/icon-nobezel.png \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/icon.png \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/logo.png \
@@ -352,6 +355,7 @@
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/com.phonegap.plugins.PushPlugin \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.dialogs \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.media \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.vibration \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/com.phonegap.plugins.PushPlugin/www \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/com.phonegap.plugins.PushPlugin/www/PushNotification.js \
@@ -361,6 +365,11 @@
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/notification.js \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android/notification.js \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.media/www \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.media/www/Media.js \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.media/www/MediaError.js \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.vibration/www \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins/org.apache.cordova.vibration/www/vibration.js \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/sounds/howl1.mp3 \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/sounds/howl2.wav \
 /Users/cna21/Development/wulfpack-app/platforms/android/bin/AndroidManifest.xml \

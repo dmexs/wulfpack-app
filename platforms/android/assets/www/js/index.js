@@ -1,3 +1,9 @@
+// Globals
+var needToHowl = false;
+var gpsLat;
+var gpsLng;
+var googleApiKey = 'AIzaSyAN-U-gEEPL0HzC4st2czQUc86jnnbN6fo';
+
 // Cordova/PhoneGap:
 var PushNotification;
 var app = {
@@ -27,7 +33,7 @@ var app = {
                 console.log('registering android');
                 pushNotification.register(app.successHandler, app.errorHandler, {"senderID":"1003367237948","ecb":"app.onNotificationGCM"});     // required!
             } else {
-                console.log('registering android');
+                console.log('registering ios');
                 pushNotification.register(app.tokenHandler, app.errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});    // required!
             }
         }
@@ -41,18 +47,11 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
         console.log('Received Event: ' + id);
     },
 
     successHandler: function(result) {
-        // alert('Callback Success! Result = '+result)
+        console.log('GCM registered = '+result)
     },
     errorHandler:function(error) {
         alert('pushNotification register error: ' + error);
@@ -72,13 +71,17 @@ var app = {
             case 'message':
                 // this is the actual push notification. its format depends on the data model from the push server
                 //alert('message = '+e.message+' msgcnt = '+e.msgcnt);
-                navigator.notification.alert(
+                /* navigator.notification.alert(
                     e.message,  // message
                     'Howl Received!',            // title
                     'Howl Received!'                  // buttonName
-                );
-                navigator.notification.beep(3);
-                navigator.notification.vibrate(2000);
+                ); */               
+                /* navigator.notification.vibrate(2000); */
+                needToHowl = true;
+                gpsLat = parseFloat(e.lat);
+                gpsLng = parseFloat(e.lng);
+                $.mobile.changePage("courtView.html",{allowSamePageTransition:true,reloadPage:false,changeHash:true,transition:"slide"})
+
                 break;
 
             case 'error':
@@ -103,3 +106,38 @@ $(function () {
     // Setup persistent external toolbar
     $("[data-role='header']").toolbar();
 });
+
+// howl.html
+$('#courtView').on('pageinit', function (event, data) {
+    // howl if need be:    
+    drawStaticMap();
+    howl();
+});
+
+function howl() {
+    if (needToHowl) {
+        var howlSound = new Media("file:///android_asset/www/sounds/howl2.wav", function(){}, function(){});
+        howlSound.play();
+        needToHowl = false;
+    }    
+}
+
+function drawStaticMap() {
+    //gpsLat = 41.508801;
+    //gpsLng = -81.605376;
+    $('#googleMap').attr('style','background: url("http://maps.googleapis.com/maps/api/staticmap?key=' 
+                        + googleApiKey 
+                        + '&center=' + gpsLat + ',' + gpsLng 
+                        + '&size=1000x500&zoom=17") center no-repeat;');
+}
+
+function drawDynamicMap() {
+    var gpsLatLng = new google.maps.LatLng(gpsLat, gpsLng);
+    google.maps.visualRefresh = true;
+    var mapOptions = {
+        center: gpsLatLng,
+        zoom: 18,
+        streetViewControl: false
+    };
+    map = new google.maps.Map($("#googleMap")[0], mapOptions);
+}
