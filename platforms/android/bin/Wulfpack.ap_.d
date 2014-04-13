@@ -347,6 +347,10 @@
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/icon-nobezel.png \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/icon.png \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/logo.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/map.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/sports \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/sports/basketball.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js/howl.js \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js/index.js \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js/jquery-1.11.0.min.js \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js/jquery.mobile-1.4.2.min.js \
