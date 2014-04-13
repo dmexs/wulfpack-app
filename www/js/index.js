@@ -3,6 +3,32 @@ var needToHowl = false;
 var gpsLat;
 var gpsLng;
 var googleApiKey = 'AIzaSyAN-U-gEEPL0HzC4st2czQUc86jnnbN6fo';
+var id;
+var i = 0;
+
+$( document ).ready(function() {
+    updateHowls();
+    $(".territoryBlock").click(function(){
+        window.location.href ="/wulfpack-app/www/courtView.html"
+    });
+});
+
+function updateHowls() {
+  id = window.setInterval(update, 50);  
+
+}
+
+function update() {
+    var element = $(".howl");
+   // element[i].text(9);
+
+}
+
+function stopHowls() {
+  clearInterval(id);
+}
+
+
 
 // Cordova/PhoneGap:
 var PushNotification;
