@@ -114,6 +114,28 @@ $('#courtView').on('pageinit', function (event, data) {
     drawStaticMap();
 });
 
+$('#btnHowl').on('click', function () {
+    var registrationIds = [];
+    registrationIds[0] = "APA91bHq6N6zSUvF1u6dR2taCNRlrhEM-QDCi1pfoGlWuPwYJuZuADLsZtbad0yZuln9AYeI78NHpVXZgsJP6BlSwolnZqfDIsnU1anoIXbONaL-5ivKP6tAR7GbO0s-8tfRRSktoD8tkmC5SriRv1L6EMAjoTuICQ";
+    registrationIds[1] = "APA91bERRwOpINVGmOGB9-gSpiJT0ySEcI_M4SvTfO4zvPWA1xK4LjQsGMzP1E4Y-gm8jyz_gGRrn_a7xaN7LGHgeSAcRmF7Y4YyKua5qWWxu_RlNiuy4caVKtRot1Xp_XbnSz3JWyVZT2cPPLWq-3JLijGu3RgBEQ";
+    var regIdsJSON = JSON.stringify(registrationIds);
+    console.log(regIdsJSON);
+
+    $.ajax({
+        type: "POST",
+        contentType: "application/json; charset=utf-8;",
+        url: "https://android.googleapis.com/gcm/send",
+        headers: {'Authorization': 'key=AIzaSyAN-U-gEEPL0HzC4st2czQUc86jnnbN6fo'},
+        data: {"registration_ids": ["APA91bHq6N6zSUvF1u6dR2taCNRlrhEM-QDCi1pfoGlWuPwYJuZuADLsZtbad0yZuln9AYeI78NHpVXZgsJP6BlSwolnZqfDIsnU1anoIXbONaL-5ivKP6tAR7GbO0s-8tfRRSktoD8tkmC5SriRv1L6EMAjoTuICQ", "APA91bERRwOpINVGmOGB9-gSpiJT0ySEcI_M4SvTfO4zvPWA1xK4LjQsGMzP1E4Y-gm8jyz_gGRrn_a7xaN7LGHgeSAcRmF7Y4YyKua5qWWxu_RlNiuy4caVKtRot1Xp_XbnSz3JWyVZT2cPPLWq-3JLijGu3RgBEQ"], "data": {"message": "A howl was heard!"}},
+        success: function (data, status) {
+            console.log('Good howl!');
+        },
+        error: function (data, status, errorThrown) {
+            console.log('Bad howl');
+        }
+    });
+});
+
 function howl() {
     if (needToHowl) {
         var howlSound = new Media("file:///android_asset/www/sounds/howl2.wav", function(){}, function(){});
@@ -125,7 +147,7 @@ function howl() {
 function drawStaticMap() {
     //gpsLat = parseFloat("41.508801");
     //gpsLng = parseFloat("-81.605376");
-    console.log('#GPS COORDS: ' + gpsLat + ',' + gpsLng)
+    /*console.log('#GPS COORDS: ' + gpsLat + ',' + gpsLng)
     $("#googleMap").removeAttr('style');
     $('#googleMap').attr('style','background: url("https://maps.googleapis.com/maps/api/staticmap?key=' 
                         + googleApiKey 
@@ -133,6 +155,7 @@ function drawStaticMap() {
                         + '&size=1000x500&zoom=17'
                         + '&timestamp=' + (new Date()).getTime()
                         + '") center no-repeat;');
+*/
 }
 
 function drawDynamicMap() {

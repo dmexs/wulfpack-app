@@ -25,7 +25,9 @@ h1
 #googleMap {
     height: 18.750em;
     width: 100%;
-    background-color: black;
+    background: url('../img/map.png') no-repeat center;
+}
+.territoryText{
     margin: 0px auto;
 }
 /* Main paige */
