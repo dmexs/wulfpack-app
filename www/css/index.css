@@ -22,17 +22,29 @@ h1
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
 }
-.territoryThumb {
-    width: 120px;
-    height: 150px;
-    background-color: black;
-    clear: none;
-    display: inline-block;
-    margin: 0.625em 0.625em 0.625em 0.625em;
-}
 #googleMap {
     height: 18.750em;
     width: 100%;
     background-color: black;
     margin: 0px auto;
+}
+/* Main paige */
+.territoryBlock {
+   
+    display: inline-block;
+   }
+.territoryThumb {
+    width: 120px;
+    height: 120px;
+    background-color: black;
+   
+    display: inline-block;
+    margin: 0.625em 0.625em 0.625em 0.625em;
+}
+.basketball {
+    background: url('../img/sports/basketball.png') no-repeat center;
+}
+.territoryText{
+    display: block;
+     clear: none;
 }

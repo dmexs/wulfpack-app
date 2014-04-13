@@ -78,8 +78,9 @@ var app = {
                 ); */               
                 /* navigator.notification.vibrate(2000); */
                 needToHowl = true;
-                gpsLat = parseFloat(e.lat);
-                gpsLng = parseFloat(e.lng);
+                howl();
+                gpsLat = parseFloat(e.payload.lat);
+                gpsLng = parseFloat(e.payload.lng);
                 $.mobile.changePage("courtView.html",{allowSamePageTransition:true,reloadPage:false,changeHash:true,transition:"slide"})
 
                 break;
@@ -111,7 +112,6 @@ $(function () {
 $('#courtView').on('pageinit', function (event, data) {
     // howl if need be:    
     drawStaticMap();
-    howl();
 });
 
 function howl() {
@@ -123,12 +123,16 @@ function howl() {
 }
 
 function drawStaticMap() {
-    //gpsLat = 41.508801;
-    //gpsLng = -81.605376;
-    $('#googleMap').attr('style','background: url("http://maps.googleapis.com/maps/api/staticmap?key=' 
+    //gpsLat = parseFloat("41.508801");
+    //gpsLng = parseFloat("-81.605376");
+    console.log('#GPS COORDS: ' + gpsLat + ',' + gpsLng)
+    $("#googleMap").removeAttr('style');
+    $('#googleMap').attr('style','background: url("https://maps.googleapis.com/maps/api/staticmap?key=' 
                         + googleApiKey 
                         + '&center=' + gpsLat + ',' + gpsLng 
-                        + '&size=1000x500&zoom=17") center no-repeat;');
+                        + '&size=1000x500&zoom=17'
+                        + '&timestamp=' + (new Date()).getTime()
+                        + '") center no-repeat;');
 }
 
 function drawDynamicMap() {
