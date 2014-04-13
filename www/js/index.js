@@ -1,3 +1,4 @@
+// Cordova/PhoneGap:
 var PushNotification;
 var app = {
     // Application Constructor
@@ -17,16 +18,16 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        $("#app-status-ul").append('<li>deviceready event received</li>');
+        console.log('device ready event received');
 
         try 
         { 
             pushNotification = window.plugins.pushNotification;
             if (device.platform == 'android' || device.platform == 'Android') {
-                $("#app-status-ul").append('<li>registering android</li>');
+                console.log('registering android');
                 pushNotification.register(app.successHandler, app.errorHandler, {"senderID":"1003367237948","ecb":"app.onNotificationGCM"});     // required!
             } else {
-                $("#app-status-ul").append('<li>registering iOS</li>');
+                console.log('registering android');
                 pushNotification.register(app.tokenHandler, app.errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});    // required!
             }
         }
@@ -70,7 +71,14 @@ var app = {
 
             case 'message':
                 // this is the actual push notification. its format depends on the data model from the push server
-                alert('message = '+e.message+' msgcnt = '+e.msgcnt);
+                //alert('message = '+e.message+' msgcnt = '+e.msgcnt);
+                navigator.notification.alert(
+                    e.message,  // message
+                    'Howl Received!',            // title
+                    'Howl Received!'                  // buttonName
+                );
+                navigator.notification.beep(3);
+                navigator.notification.vibrate(2000);
                 break;
 
             case 'error':
@@ -83,3 +91,15 @@ var app = {
         }
     }
 };
+
+// jQuery/jQuery Mobile:
+// jQuery Mobile framework configuration overides
+$(document).bind("mobileinit", function () {
+    $.mobile.allowCrossDomainPages = true;
+    $.support.cors = true;
+});
+
+$(function () {
+    // Setup persistent external toolbar
+    $("[data-role='header']").toolbar();
+});

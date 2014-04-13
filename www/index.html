@@ -4,7 +4,8 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Wulfpack</title>
 
@@ -12,23 +13,74 @@
         <script type="text/javascript" charset="utf-8" src="js/PushNotification.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.2.min.js"></script>
+        <script id="panel-init">
+            $(function() {
+                $("[data-role=panel]").panel().enhanceWithin();
+            });
+        </script>
 
         <!-- CSS includes -->
-        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+        <link rel="stylesheet" href="css/wulfpack.css">
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css"> 
+        <link rel="stylesheet" href="css/index.css">        
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Titillium+Web:400,600" />
     </head>
     <body>
-        <div class="app">
-            <h1>Welcome to the Wulfpack</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Initializing</p>
-                <p class="event received">Read and Waiting</p>
+    <!-- page -->
+    <div data-role="page" data-theme="a" data-quicklinks="true">
+        <!-- header -->
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a data-icon="bars" data-iconpos="notext" class="ui-btn-left" data-theme="b" href="#slidePanel">Menu</a>
+            <div style="width: 60%; height: 60%; margin: auto; padding: 0.5em; text-align: center; text-size: 20px;">
+                <img src="img/icon.png" style="height: 24px; width: 24px;" />&nbsp;<span style=" margin-top: auto; margin-bottom: auto;">wulfpack</span>
             </div>
-            <ul id="app-status-ul"></ul>
         </div>
+
+        <div data-role="content">
+            <h1 style="font-weight: 400;">Welcome to the Wulfpack!</h1>
+            <p>There are <strong>4 territories</strong> in your proximity with recent howls. Be sure to add then to your den.</p>
+            <div style="text-align: center">
+                <div class="territoryThumb">&nbsp;</div>
+                <div class="territoryThumb">&nbsp;</div>
+                <div class="territoryThumb">&nbsp;</div>
+                <div class="territoryThumb">&nbsp;</div>
+            </div>
+        </div>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
+    </div>
+
+    <!-- slide panel -->
+    <div data-role="panel" id="slidePanel" data-position="left" data-display="overlay" data-position-fixed="false" data-theme="c">
+        <ul data-role="listview">
+            <li data-icon="delete" style="background-color:#111;">
+                <a href="#" data-rel="close">Close Menu</a>
+            </li>
+            <li>
+                <a href="den.html">Den</a>
+            </li>
+            <li>
+                <a href="territories.html">Territories</a>
+            </li>
+            <li>
+                <a href="howls.html">Howls</a>
+            </li>
+            <li>
+                <a href="alpha.html">Alpha Mode</a>
+            </li>
+            <li>
+                <a href="help.html">Help?</a>
+            </li>
+            <li>
+                <a href="legal.html">Legal</a>
+            </li>
+        </ul>
+    </div>
+
     </body>
 </html>
