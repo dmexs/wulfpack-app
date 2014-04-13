@@ -24,6 +24,7 @@
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/index.html \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/landing.html \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/legal.html \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/plugins \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/sounds \
@@ -348,8 +349,11 @@
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/icon.png \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/logo.png \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/map.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/splash.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/splash2.png \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/sports \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/sports/basketball.png \
+/Users/cna21/Development/wulfpack-app/platforms/android/assets/www/img/sports/basketball_long.png \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js/howl.js \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js/index.js \
 /Users/cna21/Development/wulfpack-app/platforms/android/assets/www/js/jquery-1.11.0.min.js \

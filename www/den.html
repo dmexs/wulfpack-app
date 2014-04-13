@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="css/wulfpack.css">
         <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css"> 
         <link rel="stylesheet" href="css/index.css">        
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Titillium+Web:400,600" />
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Titillium+Web:400,600,800" />
     </head>
     <body>
     <div id="allContent" data-role="page" data-theme="a">
@@ -32,8 +32,37 @@
         </div>
 
         <div data-role="content">
-            <h1 style="font-weight: 400;">THIS IS DEN!</h1>
+            <h1 style="font-weight: 400;">Your <span style='color: #ffce00; font-weight: 800;'>Den</span></h1>
+            <h2>your subscribed territories</h2>
+            <br/>
+            <div class="denTerritoryBlock">
+                <div class='imgBlock' style="background: url('img/sports/basketball_long.png') no-repeat center;">&nbsp;</div>
+                <strong>Signal Park</strong> <span class='metaData'> | 7 recent howls <span class='slash'>/<span> 0.7 mi away</span>
+            </div>
+            <div class="denTerritoryBlock">
+                <div class='imgBlock' style="background: url('http://www.asi.calpoly.edu/admin/img/upPhoto/1311203638_New%20Basketball%20Courts.jpg') no-repeat center;">&nbsp;</div>
+                <strong>James Park</strong> <span class='metaData'> | 10 recent howls <span class='slash'>/<span> 0.2 mi away</span>
+            </div>
+            <div class="denTerritoryBlock">
+                <div class='imgBlock' style="background: url('http://www.chicagoparkdistrict.com/assets/1/7/1d23b394a4d1444990364f7efd8f092a1.jpg') no-repeat center;">&nbsp;</div>
+                <strong>Memorial Park</strong> <span class='metaData'> | 17 recent howls <span class='slash'>/<span> 0.3 mi away</span>
+            </div>
+            <div class="denTerritoryBlock">
+                <div class='imgBlock' style="background: url('http://www.sportcourteast.com/Portals/157076/images/_dsc8382-resized-600.jpg') no-repeat center;">&nbsp;</div>
+                <strong>Kelly Park</strong> <span class='metaData'> | 9 recent howls <span class='slash'>/<span> 2.7 mi away</span>
+            </div>
         </div>
+
+        <div data-role="footer" style="overflow:hidden; bottom:0; position:absolute !important; top: auto !important; width:100%;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="location">Closest</a></li>
+                    <li><a href="#" data-icon="star">Most Popular</a></li>
+                    <li><a href="#" data-icon="edit">A - Z</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

@@ -27,11 +27,10 @@
         <link rel="stylesheet" href="css/wulfpack.css">
         <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css"> 
         <link rel="stylesheet" href="css/index.css">        
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Titillium+Web:400,600" />
     </head>
     <body>
     <!-- page -->
-    <div data-role="page" data-theme="a" data-quicklinks="true">
+    <div id='splash' data-role="page" data-theme="a" data-quicklinks="true" style="background: url('img/splash2.png') no-repeat left bottom;">
         <!-- header -->
         <div data-role="header" data-position="fixed" data-theme="b">
             <a data-icon="bars" data-iconpos="notext" class="ui-btn-left" data-theme="b" href="#slidePanel">Menu</a>
@@ -41,39 +40,9 @@
         </div>
 
         <div data-role="content">
-            <h1 style="font-weight: 400;">Welcome to the Wulfpack!</h1>
-            <p>There are <strong>4 territories</strong> in your proximity with recent howls. Be sure to add then to your den...</p>
-            <div style="text-align: center">
-                <div class="territoryBlock">
-                    <div class="territoryThumb basketball"></div>
-                    <div class="territoryText">
-                        Tyler Court
-                        <div class="smaller"><span class="howl">8</span> howls <br> in the last 10min</div>
-                    </div>
-                </div>
-                <div class="territoryBlock">   
-                    <div class="territoryThumb volleyball"></div>
-                    <div class="territoryText">
-                        Tyler Court
-                        <div class="smaller"><span class="howl">18</span> howls <br> in the last 50min</div>
-                    </div>
-                </div>
-                <div class="territoryBlock">   
-                    <div class="territoryThumb baseball"></div>
-                    <div class="territoryText">
-                        YMCA
-                        <div class="smaller"><span class="howl">12</span> howls <br> in the last 30min</div>
-                    </div>
-                </div>
-                <div class="territoryBlock">   
-                    <div class="territoryThumb tennis"></div>
-                    <div class="territoryText">
-                        Hyland Court
-                        <div class="smaller"><span class="howl">0</span> howls <br> today</div>                        
-                    </div>    
-                </div>
-            </div>
-             
+        <div style="overflow:hidden; bottom:0; position:absolute !important; top: auto !important; width:100%; background: none; margin-bottom:30px; margin-right:auto; margin-left:auto;">
+            <h1 class='headerText'><span style='font-weight: 200;'>Welcome to the </span><span style='color: #ffce00'>Wulfpack</span></h1>
+        </div><!-- /footer -->
         </div>
     </div>
 
@@ -82,6 +51,9 @@
         <ul data-role="listview">
             <li data-icon="delete" style="background-color:#111;">
                 <a href="#" data-rel="close">Close Menu</a>
+            </li>
+            <li>
+                <a href="landing.html">Trending</a>
             </li>
             <li>
                 <a href="den.html">Den</a>
@@ -103,6 +75,7 @@
             </li>
         </ul>
     </div>
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

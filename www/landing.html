@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="-1">
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Wulfpack</title>
+
+        <!-- JS includes -->
+        <script type="text/javascript" charset="utf-8" src="js/PushNotification.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <script id="panel-init">
+            $(function() {
+                $("[data-role=panel]").panel().enhanceWithin();
+            });
+        </script>
+
+        <!-- CSS includes -->
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+        <link rel="stylesheet" href="css/wulfpack.css">
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css"> 
+        <link rel="stylesheet" href="css/index.css">        
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Titillium+Web:400,600" />
+    </head>
+    <body>
+    <!-- page -->
+    <div data-role="page" data-theme="a" data-quicklinks="true">
+        <!-- header -->
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a data-icon="bars" data-iconpos="notext" class="ui-btn-left" data-theme="b" href="#slidePanel">Menu</a>
+            <div style="width: 60%; height: 60%; margin: auto; padding: 0.5em; text-align: center; text-size: 20px;">
+                <img src="img/icon.png" style="height: 24px; width: 24px;" />&nbsp;<span style=" margin-top: auto; margin-bottom: auto;">wulfpack</span>
+            </div>
+        </div>
+
+        <div data-role="content">
+            <h1 style="font-weight: 400;">Trending</h1>
+            <p>There are <strong>4 territories</strong> in your proximity with recent howls. Be sure to add then to your den...</p>
+            <div style="text-align: center">
+                <div class="territoryBlock">
+                    <div class="territoryThumb basketball"></div>
+                    <div class="territoryText">
+                        Tyler Park
+                        <div class="smaller"><span class="howl">8</span> howls <br> in the last 10min</div>
+                    </div>
+                </div>
+                <div class="territoryBlock">   
+                    <div class="territoryThumb basketball"></div>
+                    <div class="territoryText">
+                        Cleveland Hts.
+                        <div class="smaller"><span class="howl">18</span> howls <br> in the last 50min</div>
+                    </div>
+                </div>
+                <div class="territoryBlock">   
+                    <div class="territoryThumb basketball"></div>
+                    <div class="territoryText">
+                        YMCA Lyndhurst
+                        <div class="smaller"><span class="howl">12</span> howls <br> in the last 30min</div>
+                    </div>
+                </div>
+                <div class="territoryBlock">   
+                    <div class="territoryThumb basketball"></div>
+                    <div class="territoryText">
+                        Hyland Court
+                        <div class="smaller"><span class="howl">0</span> howls <br> today</div>                        
+                    </div>    
+                </div>
+                <div class="territoryBlock">
+                    <div class="territoryThumb basketball"></div>
+                    <div class="territoryText">
+                        Sampson Field
+                        <div class="smaller"><span class="howl">8</span> howls <br> in the last 10min</div>
+                    </div>
+                </div>
+                <div class="territoryBlock">   
+                    <div class="territoryThumb basketball"></div>
+                    <div class="territoryText">
+                        Citadel Park
+                        <div class="smaller"><span class="howl">18</span> howls <br> in the last 50min</div>
+                    </div>
+                </div>
+                <div class="territoryBlock">   
+                    <div class="territoryThumb basketball"></div>
+                    <div class="territoryText">
+                        Murray Hill
+                        <div class="smaller"><span class="howl">12</span> howls <br> in the last 30min</div>
+                    </div>
+                </div>
+                <div class="territoryBlock">   
+                    <div class="territoryThumb basketball"></div>
+                    <div class="territoryText">
+                        Watchtower Road
+                        <div class="smaller"><span class="howl">0</span> howls <br> today</div>                        
+                    </div>    
+                </div>
+            </div>
+             
+        </div>
+            <div data-role="footer" style="overflow:hidden; bottom:0; position:absolute !important; top: auto !important; width:100%;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="location">Closest</a></li>
+                    <li><a href="#" data-icon="star">Most Popular</a></li>
+                    <li><a href="#" data-icon="edit">A - Z</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+    </div>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

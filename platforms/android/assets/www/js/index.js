@@ -134,6 +134,12 @@ $(function () {
     $("[data-role='header']").toolbar();
 });
 
+// index.html
+$('#splash').on('pageinit', function (event, data) {
+    setTimeout(function () { $.mobile.loading("show", { text: 'Loading', textVisible: true }); }, 1);
+    setTimeout(function() { $.mobile.changePage("landing.html",{allowSamePageTransition:true,reloadPage:false,changeHash:true,transition:"slide"}) }, 2500);
+});
+
 // howl.html
 $('#courtView').on('pageinit', function (event, data) {
     // howl if need be:    
